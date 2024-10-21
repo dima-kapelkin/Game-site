@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: black;
+}
+.comment {
+    padding:8px 0;
+ }
+ .container-comment {
+    color: white;
+    margin: 0 auto;
+    width: 1800px;
+    height: 1800px;
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 100px;
+ }
+ 
+ .comment span:first-child {
+     text-transform: uppercase;
+     font-weight: bold;
+     color: white;
+ }
+ .comment span:nth-child(3) {
+     color: rgb(56,53,53);
+     font-size: 12px;  
+     color: white;
+ }
+ h2 {
+     color: lightskyblue;
+ }
+ form {
+    margin: 0 auto;
+ }
+ input label textarea {
+    margin-left: 500px;
+ }
+.play {
+    font-family: cursive;
+    font-size:50px;
+    color: white;
+}
+header {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #cf0000;
+}
+
+header .logo,
+footer .blocks .logo {
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+    margin-left: 100px;
+}
+
+
+header nav {
+    float: right;
+    width: 50%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 2;
+    position: relative;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #fff
+}
+
+header nav ul li.active::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: #ffffff;
+    border-radius: 10px;
+    position: relative;
+    top: 10px;
+    left: -15px;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+    border-bottom: 5px solid #ffffff;
+}
+
+header nav ul li.btn a,
+.email .block button {
+    background: #cf0000;
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+
+header nav ul li.btn a:hover,
+.email .block button:hover {
+    background: #000000;
+}
+
+.burger {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 15px;
+    position: absolute;
+    display:none;
+    top: 180px;
+    left: 10px;
+}
+.burger img {
+    width: 50px;
+    height: 50px;
+}
+.burger-submenu {
+    display: none;
+    border: 1px solid white;
+    box-sizing: border-box;
+    color: black;
+    width: 150px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.burger:hover > .burger-submenu {
+    display: inline-flex;
+    flex-direction: column;
+}
+.burger-submenu li {
+    background-color:red;
+    padding: 15px 25px;
+    cursor: pointer;
+    position: relative;
+}
+.burger-submenu a {
+    color: white;
+}
+.burger-submenu > li:not(:last-child){
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
+}
+.burger-submenu li:hover {
+    background-color: black;
+    color: white;
+}
+
+footer {
+    background: #cf0000;
+    padding: 50px 0;
+}
+
+footer .blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .blocks p {
+    width: 300px;
+    margin: 15px 0;
+}
+
+footer .blocks h4 {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+footer .blocks ul {
+    list-style: none;
+}
+
+footer .blocks ul li {
+    margin-top: 7px;
+    opacity: 0.8;
+}
+
+footer hr {
+    margin: 30px 0;
+    border: 0;
+    height: 0.6px;
+    background: #ccc;
+}
+
+footer>p {
+    text-align: center;
+}
+.logo-2 {
+    color: #ccc;
+    font-size: 30px;
+}
